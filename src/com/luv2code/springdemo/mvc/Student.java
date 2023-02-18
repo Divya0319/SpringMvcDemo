@@ -1,5 +1,6 @@
 package com.luv2code.springdemo.mvc;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class Student {
@@ -8,18 +9,18 @@ public class Student {
 	private String lastName;
 	private String country;
 	
-	private LinkedHashMap<String, String> countryOptions;
+	private ArrayList<String> countryOptions;
 	
 	public Student() {
 		
-		countryOptions = new LinkedHashMap<>();
+		countryOptions = new ArrayList<>();
 		
-		countryOptions.put("BR", "Brazil");
-		countryOptions.put("DE", "Germany");
-		countryOptions.put("FR", "France");
-		countryOptions.put("IN", "India");
-		countryOptions.put("US", "United States of America");
-		countryOptions.put("JA", "Japan");
+		countryOptions.add("Brazil");
+		countryOptions.add("Germany");
+		countryOptions.add("France");
+		countryOptions.add("India");
+		countryOptions.add("United States of America");
+		countryOptions.add("Japan");
 
 		
 	}
@@ -53,7 +54,7 @@ public class Student {
 	}
 
 
-	public LinkedHashMap<String, String> getCountryOptions() {
+	public ArrayList<String> getCountryOptions() {
 		return countryOptions;
 	}
 	
