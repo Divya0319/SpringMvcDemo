@@ -4,6 +4,11 @@
 <html>
 <head>
 	<title>Student Confirmation</title>
+	<style type="text/css">
+	td {
+		border: solid 2px lightgrey;
+		}
+	</style>
 </head>
 <body>
 
@@ -21,13 +26,16 @@ Favorite Language: ${student.favoriteLanguage}
 
 Operating Systems:
 
-<ul>
+<table style="border: 2px solid grey; border-collapse:collapse;">
+
+
 	<c:forEach var="temp" items="${student.operatingSystems}">
-	
-		<li>${temp}</li>
-	
+	<tr>
+		<td>${temp}</td>
+	</tr>
 	</c:forEach>
-</ul>
+
+</table>
 
 </body>
 </html>
