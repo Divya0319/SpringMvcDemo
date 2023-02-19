@@ -32,9 +32,7 @@
 		
 		Operating Systems:
 		
-		Windows <form:checkbox path="operatingSystems" value="Windows"/>
-		MacOS <form:checkbox path="operatingSystems" value="MacOS"/>
-		Linux <form:checkbox path="operatingSystems" value="Linux"/>
+		<form:checkboxes  path="operatingSystems" items="${theOSOptions}"/>
 			
 		</form:select>
 	

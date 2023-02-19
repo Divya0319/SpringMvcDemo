@@ -17,6 +17,8 @@ Country:  ${student.country}
 
 Favorite Language: ${student.favoriteLanguage}
 
+<br><br>
+
 Operating Systems:
 
 <ul>
