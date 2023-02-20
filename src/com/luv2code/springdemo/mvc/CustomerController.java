@@ -24,9 +24,11 @@ public class CustomerController {
 	@RequestMapping("/processForm")
 	public String processForm(
 			// @Valid annotation used, to tell Spring to perform validation rules on this Customer object
+			// "customer" model attribute here is received from the form submission
 			@Valid @ModelAttribute("customer") Customer theCustomer,
 			BindingResult theBindingResult) { //  Spring will store the result of validation in BindingResult object
 		
+		System.out.println("Last name: |" + theCustomer.getLastName() + "|");
 		if(theBindingResult.hasErrors()) {
 			return "customer-form";
 		} else { 
