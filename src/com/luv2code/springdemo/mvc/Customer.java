@@ -21,7 +21,7 @@ public class Customer {
 	@Max(value=10, message="must be less than or equal to 10")
 	private Integer freePasses;
 	
-	@CourseCode(value="TOP", message="must start with TOP")
+	@CourseCode(value= {"TOPS", "PYQ"}, message="must start with TOPS or PYQ")
 	private String courseCode;
 	
 	
